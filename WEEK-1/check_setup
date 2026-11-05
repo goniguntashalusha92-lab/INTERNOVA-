@@ -1,0 +1,14 @@
+# Task 2: Verify the environment (Python, NumPy, Pandas)
+import sys
+import numpy as np
+import pandas as pd
+
+print("Python version :", sys.version.split()[0])
+print("NumPy version  :", np.__version__)
+print("Pandas version :", pd.__version__)
+
+marks = np.array([45, 78, 62, 90, 33])
+print("Marks array    :", marks)
+print("Average marks  :", marks.mean())
+df = pd.DataFrame({"Student": ["A", "B", "C"], "Marks": [78, 62, 90]})
+print(df)
